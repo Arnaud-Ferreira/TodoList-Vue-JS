@@ -8,10 +8,10 @@
 
         <div class="form-group">
             <label for="action">Action</label>
-            <input type="text" id="action" class="form-control mt-2">
+            <input v-model="formData.task" type="text" id="action" class="form-control mt-2">
         </div>
 
-        <button class="btn btn-primary mt-3">Create a task</button>
+        <button v-on:click.prevent="createTask" class="btn btn-primary mt-3">Create a task</button>
 
     </form>
 
@@ -38,6 +38,12 @@
                     task: ''
                 },
                 taskArray: ['JavaScript', 'Learn Vue', 'Learn Python', 'Master React']
+            }
+        },
+        methods: {
+            createTask: function() {
+                this.taskArray.push(this.formData.task)
+                this.formData.task = ''
             }
         },
         components: {
