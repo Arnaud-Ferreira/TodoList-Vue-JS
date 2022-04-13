@@ -1,7 +1,11 @@
 # todolist
 
+Here is a todolist made in js view, like all todo lists you can add and remove tasks at will.
+Bootstrap used for the CSS
+
 ## Project setup
 ```
+
 npm install
 ```
 
@@ -10,15 +14,3 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
