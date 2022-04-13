@@ -17,7 +17,7 @@
 
     <ul>
         <li v-bind:key="index" v-for="(task, index) in taskArray">
-            <task :task="task"/>
+            <task :id="index" :task="task" :remove="remove"/>
         </li>
     </ul>
 
@@ -44,6 +44,10 @@
             createTask: function() {
                 this.taskArray.push(this.formData.task)
                 this.formData.task = ''
+            },
+            remove: function(event) {
+                // deletes the id of the parent of the targeted element
+                this.taskArray.splice(event.target.parentNode.id, 1)
             }
         },
         components: {

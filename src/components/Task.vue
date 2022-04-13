@@ -2,7 +2,7 @@
     
     <div class="card my-2 item-todo">
        <p>{{ task }}</p> 
-       <div class="btn-supr btn btn-danger">X</div>
+       <div v-on:click="remove" class="btn-supr btn btn-danger">X</div>
     </div>
 
 
@@ -13,7 +13,7 @@
 
     export default {
         name: 'TaskComp',
-        props: ['task', 'delete']
+        props: ['task', 'remove']
     }
 
 </script>
