@@ -14,3 +14,7 @@ npm install
 npm run serve
 ```
 
+## Preview 
+![](Result.gif)
+
+
