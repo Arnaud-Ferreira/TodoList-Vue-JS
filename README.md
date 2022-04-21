@@ -3,6 +3,10 @@
 Here is a todolist made in js view, like all todo lists you can add and remove tasks at will.
 Bootstrap used for the CSS
 
+
+## Preview 
+![](Result.gif)
+
 ## Project setup
 ```
 
@@ -14,7 +18,5 @@ npm install
 npm run serve
 ```
 
-## Preview 
-![](Result.gif)
 
 
